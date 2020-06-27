@@ -6,7 +6,8 @@
 <script>
   function btn(){
     var pagehtml = document.getElementById("page").innerHTML;
-    document.getElementById("url").innerHTML = '<xmp>https://myworldzycpc.github.io/yourpage/replay?' + window.btoa(pagehtml) + '</xmp>'
+    var encodepage = window.atob(pagehtml);
+    document.getElementById("url").innerHTML = '<xmp>https://myworldzycpc.github.io/yourpage/replay?' + encodepage + '</xmp>'
   }
 </script>
 <button id="build" onclick="btn()">生成并复制链接</button>
