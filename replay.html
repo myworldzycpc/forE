@@ -8,6 +8,7 @@
     document.write("此页面用于重现用户在 https://myworldzycpc.github.io/yourpage/ 中创建的页面");
   }else{
     var urlParmStr = url.slice(url.indexOf('?')+1);//获取问号后所有的字符串
-    document.write(urlParmStr)
+    var decodehtml = window.decodeURI(atob(urlParmStr))
+    document.write(decodehtml)
   }
 </script>
