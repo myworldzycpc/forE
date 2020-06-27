@@ -7,7 +7,7 @@
 <script>
   function btn(){
     var pagehtml = document.getElementById("page").innerHTML;
-    var encodepage = window.atob(pagehtml);
+    var encodepage = window.btoa(window.encodeURIComponent(pagehtml));
     document.getElementById("url").innerHTML = '<xmp>https://myworldzycpc.github.io/yourpage/replay?' + encodepage + '</xmp>'
   }
 </script>
