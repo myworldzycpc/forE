@@ -11,6 +11,7 @@
     var decodehtml = window.decodeURI(atob(urlParmStr))
     decodehtml = decodehtml.replace(/%2F/g,"/")
     decodehtml = decodehtml.replace(/%2C/g,"/")
+    window.alert(decodehtml)
     document.write(decodehtml)
   }
 </script>
