@@ -5,11 +5,12 @@
 </div>
 <script>
   func btn(){
+    window.alert(document.getElementById("page").value);
     document.getElementById("url").value = 'https://myworldzycpc.github.io/yourpage/replay?'+(document.getElementById("page").value);
   }
   
 </script>
-<button id="build" onclick="btn()">生成并复制链接</button>"
+<button id="build" onclick="btn()">生成并复制链接</button>
 <div id="url" style="color:#0000FF">
   此处生成链接
 </div>
