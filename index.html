@@ -12,9 +12,12 @@
       var encodepage = window.btoa(window.encodeURIComponent(pagehtml));
       document.getElementById("url").innerHTML = '<xmp>https://myworldzycpc.github.io/yourpage/replay?' + encodepage + '</xmp>'
     }
+    function hua(){
+      document.getElementById("url").innerHTML = '作者无话'
+    }
   </script>
   <button id="build" onclick="btn()" style='background-color:green'>生成链接</button>
-  <button id="build" onclick="window.alert('作者：myworldzycpc')" style='background-color:yellow'>作者的话</button>
+  <button id="build" onclick="hua()" style='background-color:yellow'>作者的话</button>
   <div id="url" style="color: #0000FF;word-wrap: break-word;word-break: break-all;overflow: hidden">
     此处生成链接
   </div>
