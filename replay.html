@@ -1,3 +1,13 @@
 <head>
   <title>页面重现</title>
 </head>
+<script>
+  var url = document.location.toString();//获取url地址
+  
+  if ( url.indexOf('?') == (-1) ){
+    document.write("此页面用于重现用户在 https://myworldzycpc.github.io/yourpage/ 中创建的页面");
+  }else{
+    var urlParmStr = url.slice(url.indexOf('?')+1);//获取问号后所有的字符串
+    document.write(urlParmStr)
+  }
+</script>
