@@ -1,18 +1,24 @@
+
+<head><title>制作你的页面</title></head>
 <body style='background-color: #F0F0F0'>
-制作你的页面
-<div id="page" style="border:1px solid #999;padding:3px;background-color:white" contenteditable="true">
-  在这里编辑你的页面…<br>
-  可以在这里粘贴多信息文本
-</div>
-<script>
-  function btn(){
-    var pagehtml = document.getElementById("page").innerHTML;
-    var encodepage = window.btoa(window.encodeURIComponent(pagehtml));
-    document.getElementById("url").innerHTML = '<xmp>https://myworldzycpc.github.io/yourpage/replay?' + encodepage + '</xmp>'
-  }
-</script>
-<button id="build" onclick="btn()" style='background-color:green'>生成链接</button>
-<div id="url" style="color: #0000FF;word-wrap: break-word;word-break: break-all;overflow: hidden">
-  此处生成链接
-</div>
+  <h1 style="text-align:center">制作你的页面</h1>
+  <div id="page" style="border:1px solid #999;padding:3px;background-color:white" contenteditable="true">
+    在这里编辑你的页面…<br>
+    可以在这里粘贴多信息文本
+  </div>
+  <script
+    function btn(){
+      var pagehtml = document.getElementById("page").innerHTML;
+      var encodepage = window.btoa(window.encodeURIComponent(pagehtml));
+      document.getElementById("url").innerHTML = '<xmp>https://myworldzycpc.github.io/yourpage/replay?' + encodepage + '</xmp>'
+    }
+  </script>
+  <button id="build" onclick="btn()" style='background-color:green'>生成链接</button>
+  <div id="url" style="color: #0000FF;word-wrap: break-word;word-break: break-all;overflow: hidden">
+    此处生成链接
+  </div>
+  <p style="color: #D0D0D0;word-wrap: break-word;word-break: break-all">
+  你输入的所有内容将会被进行base64编码后追加到https://myworldzycpc.github.io/yourpage/replay的参数中，
+  解码完全在本地完成，没有在服务器中创建任何数据。
+  </p>
 </body>
