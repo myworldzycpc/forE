@@ -5,8 +5,9 @@
 </div>
 <script>
   func btn(){
-    window.alert(document.getElementById("page").value);
-    document.getElementById("url").value = 'https://myworldzycpc.github.io/yourpage/replay?'+(document.getElementById("page").value);
+    var pagehtml = document.getElementById("page").innerText;
+    window.alert(pagehtml);
+    document.getElementById("url").innerHTML = 'https://myworldzycpc.github.io/yourpage/replay?' + pagehtml;
   }
   
 </script>
