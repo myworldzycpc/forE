@@ -4,14 +4,10 @@
   可以在这里粘贴多信息文本
 </div>
 <script>
-  window.alert("haha");
   function btn(){
-    window.alert("btn");
     var pagehtml = document.getElementById("page").innerHTML;
-    window.alert(pagehtml);
     document.getElementById("url").innerHTML = '<xmp>https://myworldzycpc.github.io/yourpage/replay?' + pagehtml + '</xmp>'
   }
-  
 </script>
 <button id="build" onclick="btn()">生成并复制链接</button>
 <div id="url" style="color:#0000FF">
