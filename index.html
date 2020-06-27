@@ -1,5 +1,15 @@
 制作你的页面
-<div style="border:1px solid #999;padding:3px;" contenteditable="true">
+<div id="page" style="border:1px solid #999;padding:3px;" contenteditable="true">
   在这里编辑你的页面…<br>
   可以在这里粘贴多信息文本
+</div>
+<script>
+  func btn(){
+    document.getElementById("url").value = 'https://myworldzycpc.github.io/yourpage/replay?'+(document.getElementById("page").value);
+  }
+  
+</script>
+<button id="build" onclick="btn()">生成并复制链接</button>"
+<div id="url" style="color:#0000FF">
+  此处生成链接
 </div>
