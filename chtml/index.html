@@ -1,1 +1,17 @@
-
+<head><title>多信息文本转html</title></head>
+<body background="https://graph.baidu.com/thumb/2967754180,2317974062.jpg">
+  <h1 style="text-align:center;color: #00FF00">多信息文本转html</h1>
+  <div id="page" style="border:1px solid #999;padding:3px;background-color:rgba(255,255,255,0.5)" contenteditable="true">
+    在这里粘贴多信息文本
+  </div>
+  <script>
+    function btn(){
+      var pagehtml = document.getElementById("page").innerHTML;
+      document.getElementById("htmltext").innerHTML = '<p><xmp>https://myworldzycpc.github.io/yourpage/replay?' + pagehtml + '</xmp></p>'
+    }
+    
+  </script>
+  <div id="url" style="color: #0000FF;word-wrap: break-word;word-break: break-all;overflow: hidden;padding:10px;background-color:rgba(0,255,0,0.5)" contenteditable="true">
+    此处生成链接
+  </div>
+  <button id="change" onclick="btn()" style='background-color:green'>转换</button>
