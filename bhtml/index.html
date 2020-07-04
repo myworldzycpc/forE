@@ -6,7 +6,9 @@
   <script>
     function btn(){
       var pagehtml = document.getElementById("code").innerHTML;
+      window.alert(pagehtml);
       var encodepage = window.btoa(window.encodeURIComponent(pagehtml));
+      window.alert(encodepage);
       location.href = 'https://myworldzycpc.github.io/yourpage/replay/?' + encodepage
     }
   </script>
