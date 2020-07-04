@@ -1,0 +1,14 @@
+<head><title>浏览器编译html</title></head>
+<body background="https://graph.baidu.com/thumb/2967754180,2317974062.jpg">
+  <button id="home" onclick="location.href='https://myworldzycpc.github.io/yourpage/'" style='background-color:white'>返回首页</button>
+  <h1 style="text-align:center;color: #00FF00">输入html</h1>
+  <textarea id="code" cols="40" rows="4" style="OVERFLOW: hidden"></textarea>
+  <script>
+    function btn(){
+      var pagehtml = document.getElementById("code").innerHTML;
+      var encodepage = window.btoa(window.encodeURIComponent(pagehtml));
+      location.href = 'https://myworldzycpc.github.io/yourpage/replay?' + encodepage
+    }
+  </script>
+  <button id="build" onclick="btn()" style='background-color:green'>编译</button>
+</body>
