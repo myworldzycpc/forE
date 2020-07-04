@@ -5,7 +5,7 @@
   <textarea id="code" style="OVERFLOW: hidden"></textarea>
   <script>
     function btn(){
-      var pagehtml = document.getElementById("code").innerHTML;
+      var pagehtml = document.getElementById("code").text();
       window.alert(pagehtml);
       var encodepage = window.btoa(window.encodeURIComponent(pagehtml));
       window.alert(encodepage);
