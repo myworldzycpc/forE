@@ -6,9 +6,9 @@
   <script>
     function btn(){
       var pagehtml = document.getElementById("code").value;
-      var encodepage = window.btoa(window.encodeURIComponent(pagehtml));
-      location.href = 'https://myworldzycpc.github.io/yourpage/replay/?' + encodepage
+      document.getElementsByTagName('html')[0].innerHTML = pagehtml
     }
   </script>
+  <br>
   <button id="build" onclick="btn()" style='background-color:green'>编译</button>
 </body>
