@@ -9,9 +9,10 @@
   <textarea id="code" style="width: 100%;height: 50%"></textarea>
   <script>
     function btn(){
-      window.open("https://myworldzycpc.github.io/yourpage/bhtml/");
       var pagehtml = document.getElementById("code").value;
-      document.getElementsByTagName('html')[0].innerHTML = pagehtml
+      var encoded = window.btoa(window.encodeURIComponent(pagehtml));
+      window.open("https://myworldzycpc.github.io/yourpage/replay?" + encoded);
+      
     }
   </script>
   <p><button id="build" onclick="btn()" style='background-color:green' class="button button-action button-rounded">编译</button></p>
